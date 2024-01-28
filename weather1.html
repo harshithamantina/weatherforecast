@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather1.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+        
+</head>
+
+<body >
+    <img src="weathericon1.png" class="rounded pill" style="width:40px; position: relative; top:40px;left:60px;"> 
+    <h4 class="heading">weather report</h4>
+       
+    <div class="card">
+        <div class="search">
+            <i class="bx bxs-map"></i>
+            <input type="text" placeholder="Enter your Location" spellcheck="false ">
+            <button class="bx bx-search" id="add"></button>
+
+        </div>
+        <div class="error">
+            <img src="notfound.png">
+            <p>Oops Location not found!</p>
+        </div>
+
+        <div class="weather">
+            <img src="sunny.png" class="icon">
+            <h1 class="temp">28°C</h1>
+            <h2 class="city">Ramachandrapuram</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="wind speed.png">
+                    <div>
+                        <p class="wind">15 Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="weatherjs.js"></script>
+    
+       </body>
+
+</html>
